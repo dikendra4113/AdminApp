@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_white"
+    tools:context=".EarningsActivity">
+
+    <ImageView
+        android:id="@+id/actionbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:src="@drawable/actionbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/restaurant_hdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="7dp"
+        android:text="My"
+        android:textColor="@color/yellow"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintEnd_toStartOf="@+id/earning_hdg"
+        app:layout_constraintTop_toTopOf="@id/actionbar_bg" />
+
+    <TextView
+        android:id="@+id/earning_hdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="20dp"
+        android:text="Earning"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/actionbar_bg" />
+
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/arrow_back_ic"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintStart_toStartOf="@id/actionbar_bg"
+        app:layout_constraintTop_toTopOf="@id/actionbar_bg" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/daily_earning_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Earning"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/daily_dropdown_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down_ic"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            app:tint="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/today_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/yellow"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/daily_dropdown_ic"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/center_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/actionbar_bg"
+            app:tint="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/frame_1"
+            android:layout_width="370dp"
+            android:layout_height="185dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/daily_earning_tv"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/rect_frame" />
+
+        <TextView
+            android:id="@+id/total_earning_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/frame_1"
+            android:layout_alignTop="@+id/frame_1"
+            android:layout_alignRight="@id/center_line"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="₹2560.00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/total_earning_tag_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_earning_f1"
+            android:layout_alignLeft="@+id/total_earning_f1"
+            android:layout_alignRight="@+id/center_line"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="total earning"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/total_order_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/center_line"
+            android:layout_alignTop="@+id/frame_1"
+            android:layout_alignRight="@+id/frame_1"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="10"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/total_order_tag_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_order_f1"
+            android:layout_alignLeft="@id/center_line"
+            android:layout_alignRight="@+id/frame_1"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="total no. of orders"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/offline_earning_tag_f1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="₹1560.00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/offline_earning_tag_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="offline earning" />
+
+
+
+
+        <TextView
+            android:id="@+id/online_earning_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹2000.00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignLeft="@id/frame_1"
+            android:layout_marginLeft="12dp"
+            android:layout_above="@+id/online_earning_tag_f1"/>
+
+        <TextView
+            android:id="@+id/online_earning_tag_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame_1"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="online earning"
+            android:layout_alignLeft="@id/frame_1"
+            />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/discount_amount_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹1260.00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="11dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:layout_above="@+id/discount_amount_tag_f1"/>
+
+        <TextView
+            android:id="@+id/discount_amount_tag_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame_1"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:text="online earning"/>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/monthly_earning_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Earning"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/frame_1"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/monthly_dropdown_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down_ic"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/frame_1"
+            android:layout_marginTop="20dp"
+            app:tint="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/month_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/yellow"
+            android:layout_below="@id/frame_1"
+            android:layout_toLeftOf="@id/monthly_dropdown_ic"/>
+
+
+
+        <ImageView
+            android:id="@+id/frame_2"
+            android:layout_width="370dp"
+            android:layout_height="185dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/monthly_earning_tv"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/rect_frame" />
+
+        <TextView
+            android:id="@+id/total_earning_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/frame_2"
+            android:layout_alignTop="@+id/frame_2"
+            android:layout_alignRight="@id/center_line"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="₹5260.00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/total_earning_tag_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_earning_f2"
+            android:layout_alignLeft="@+id/total_earning_f2"
+            android:layout_alignRight="@+id/center_line"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="total earning"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/total_order_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/center_line"
+            android:layout_alignTop="@+id/frame_2"
+            android:layout_alignRight="@+id/frame_2"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="121"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/total_order_tag_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_order_f2"
+            android:layout_alignLeft="@id/center_line"
+            android:layout_alignRight="@+id/frame_1"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="total no. of orders"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/offline_earning_tag_f2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="₹2000.00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/offline_earning_tag_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="offline earning" />
+
+
+
+
+        <TextView
+            android:id="@+id/online_earning_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹3260.00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignLeft="@id/frame_2"
+            android:layout_marginLeft="12dp"
+            android:layout_above="@+id/online_earning_tag_f2"/>
+
+        <TextView
+            android:id="@+id/online_earning_tag_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame_2"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="online earning"
+            android:layout_alignLeft="@id/frame_2"
+            />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/discount_amount_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹3260.00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="11dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:layout_above="@+id/discount_amount_tag_f2"/>
+
+        <TextView
+            android:id="@+id/discount_amount_tag_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame_2"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:text="online earning"/>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/yearly_earning_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yearly Earning"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/frame_2"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/yearly_dropdown_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down_ic"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/frame_2"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            app:tint="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/year_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/yellow"
+            android:visibility="invisible"
+            android:layout_below="@id/frame_2"
+            android:layout_toLeftOf="@id/yearly_dropdown_ic"/>
+
+
+
+        <ImageView
+            android:id="@+id/frame_3"
+            android:layout_width="370dp"
+            android:visibility="invisible"
+            android:layout_height="185dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/yearly_earning_tv"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/rect_frame" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/total_earning_f3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignLeft="@+id/frame_3"-->
+<!--            android:layout_alignTop="@+id/frame_3"-->
+<!--            android:layout_alignRight="@id/center_line"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="₹5260.00"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/total_earning_tag_f3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/total_earning_f3"-->
+<!--            android:layout_alignLeft="@+id/total_earning_f3"-->
+<!--            android:layout_alignRight="@+id/center_line"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="total earning"-->
+<!--            android:textSize="14sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/total_order_f3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignLeft="@id/center_line"-->
+<!--            android:layout_alignTop="@+id/frame_3"-->
+<!--            android:layout_alignRight="@+id/frame_3"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="27"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/total_order_tag_f3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/total_order_f3"-->
+<!--            android:layout_alignLeft="@id/center_line"-->
+<!--            android:layout_alignRight="@+id/frame_3"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="total no. of orders"-->
+<!--            android:textSize="14sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_above="@+id/offline_earning_tag_f3"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:text="₹2000.00"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/offline_earning_tag_f3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignBottom="@id/frame_3"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginBottom="25dp"-->
+<!--            android:text="offline earning" />-->
+
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/online_earning_f3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="₹3260.00"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:layout_alignLeft="@id/frame_3"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_above="@+id/online_earning_tag_f3"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/online_earning_tag_f3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignBottom="@id/frame_3"-->
+<!--            android:layout_marginBottom="25dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:text="online earning"-->
+<!--            android:layout_alignLeft="@id/frame_3"-->
+<!--            />-->
+
+
+
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/discount_amount_f3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="₹3260.00"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginRight="11dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:layout_above="@+id/discount_amount_tag_f3"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/discount_amount_tag_f3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignBottom="@id/frame_3"-->
+<!--            android:layout_marginBottom="25dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:text="online earning"/>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

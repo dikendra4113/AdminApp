@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/productCatagory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Catagory"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/productCatagory"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:layout_toRightOf="@+id/productImage"
+
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productName"
+            android:text="Product Description"
+            android:layout_toRightOf="@id/productImage"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/user_productPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_description"
+
+            android:text="Product Price"
+            android:layout_toRightOf="@id/productImage"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15dp"  />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

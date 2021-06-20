@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AdminApp</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string-array name="category_text">Category
+        <item>Starters</item>
+        <item>Pizzas</item>
+        <item>Pastas</item>
+        <item>Sandwiches</item>
+        <item>Main-Course</item>
+        <item>Beverages</item>
+    </string-array>
+    <string-array name="unit_text">Unit
+        <item>gm</item>
+        <item>kg</item>
+        <item>pcs</item>
+        <item>doz</item>
+    </string-array>
+</resources>

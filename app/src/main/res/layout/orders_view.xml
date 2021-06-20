@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/category_bg"
+    android:backgroundTint="@color/grey_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_marginEnd="10dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+
+        <TextView
+            android:id="@+id/order_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order No. :"
+            android:textSize="8sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/order_no_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EB21RR001"
+            android:textSize="8sp"
+            android:layout_toRightOf="@id/order_tv"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/restaurant_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramdev's Khana Khazana - (RKC)"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/order_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samta Colony, Raipur"
+            android:layout_below="@+id/restaurant_name_tv"
+            android:layout_alignParentStart="true"
+            android:textSize="10sp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/total_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹115"
+            android:textColor="@color/black"
+            android:layout_below="@id/address_tv"
+            android:layout_alignParentStart="true"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"/>
+
+        <ImageView
+            android:id="@+id/break_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/break_line"
+            android:layout_below="@+id/total_amount_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchButton"
+            android:textOn="true"
+            android:textOff="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/delivery_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Done"
+            android:textSize="10sp"
+            android:layout_below="@+id/order_tv"
+            android:layout_marginTop="6dp"
+            android:visibility="invisible"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/order_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khana Khazana Special Thali x 1"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/break_line"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/order_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May 02, 2021"
+            android:textSize="7sp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/order_item_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:id="@id/delivery_status_tv"
+            android:src="@drawable/actionbar_bg"
+            app:tint="@color/black"
+
+            android:layout_below="@id/order_date_tv"/>
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

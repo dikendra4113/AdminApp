@@ -1,0 +1,180 @@
+{
+  "project_info": {
+    "project_number": "57968839708",
+    "firebase_url": "https://waiterless-41f58.firebaseio.com",
+    "project_id": "waiterless-41f58",
+    "storage_bucket": "waiterless-41f58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57968839708:android:84711c14a075166213a3d9",
+        "android_client_info": {
+          "package_name": "com.example.adminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57968839708-o2peframf70e9c1dog07i1dv9mbqj2pv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adminapp",
+            "certificate_hash": "aae37c3423f9a39a028f1b425ce7afa7277fc670"
+          }
+        },
+        {
+          "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_J_-wXfAz6nSqQvSV2PyGI75lQ9gyMBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57968839708:android:1e142231c3d529df13a3d9",
+        "android_client_info": {
+          "package_name": "com.example.adminui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57968839708-v03184lnjdje3j8f3pj46a4llbh2oiqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adminui",
+            "certificate_hash": "aae37c3423f9a39a028f1b425ce7afa7277fc670"
+          }
+        },
+        {
+          "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_J_-wXfAz6nSqQvSV2PyGI75lQ9gyMBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57968839708:android:6fcb2ac91cd0514113a3d9",
+        "android_client_info": {
+          "package_name": "com.example.loginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_J_-wXfAz6nSqQvSV2PyGI75lQ9gyMBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57968839708:android:cc6099d83c55fe1d13a3d9",
+        "android_client_info": {
+          "package_name": "com.example.seatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_J_-wXfAz6nSqQvSV2PyGI75lQ9gyMBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57968839708:android:7c8b2673abf5e88413a3d9",
+        "android_client_info": {
+          "package_name": "com.example.waiterlessfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57968839708-ajpheoe8jksbjiqleg26ef3i2kbpvsjf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.waiterlessfood",
+            "certificate_hash": "aae37c3423f9a39a028f1b425ce7afa7277fc670"
+          }
+        },
+        {
+          "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_J_-wXfAz6nSqQvSV2PyGI75lQ9gyMBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57968839708-ibmuhr15smbnt82734chum1s4osdb2f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

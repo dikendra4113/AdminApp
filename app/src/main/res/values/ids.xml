@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="user_contact" type="id" />
+    <item name="order_productName" type="id" />
+    <item name="order_description" type="id" />
+    <item name="order_productPrice" type="id" />
+    <item name="order_seat" type="id" />
+    <item name="order_date" type="id" />
+    <item name="order_quantity" type="id" />
+    <item name="productId" type="id" />
+    <item name="order_payment" type="id" />
+    <item name="switchButton" type="id" />
+    <item name="seat_RecyclerView" type="id" />
+</resources>

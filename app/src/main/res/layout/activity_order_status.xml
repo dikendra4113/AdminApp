@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_white"
+    tools:context=".OrdersActivity">
+
+
+    <ImageView
+        android:id="@+id/actionbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:src="@drawable/actionbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order_hdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="7dp"
+        android:text="Order"
+        android:textColor="@color/yellow"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintEnd_toStartOf="@+id/status_hdg"
+        app:layout_constraintTop_toTopOf="@id/actionbar_bg" />
+
+    <TextView
+        android:id="@+id/status_hdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="20dp"
+        android:text="Status"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/actionbar_bg" />
+
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/arrow_back_ic"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintStart_toStartOf="@id/actionbar_bg"
+        app:layout_constraintTop_toTopOf="@id/actionbar_bg" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderlist_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar_bg" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_white"
+    tools:context=".SeatGenActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/actionbar_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/transparent" />
+
+
+    <ImageView
+        android:id="@+id/actionbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:src="@drawable/actionbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hi_hdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="7dp"
+        android:text="Create"
+        android:textColor="@color/yellow"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintEnd_toStartOf="@+id/admin_hdg"
+        app:layout_constraintTop_toTopOf="@id/actionbar_bg" />
+
+    <TextView
+        android:id="@+id/admin_hdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="20dp"
+        android:text="QR"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/actionbar_bg" />
+
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/arrow_back_ic"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar_bg"
+        app:layout_constraintStart_toStartOf="@id/actionbar_bg"
+        app:layout_constraintTop_toTopOf="@id/actionbar_bg" />
+
+
+    <TextView
+        android:id="@+id/total_seat_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="58dp"
+        android:text="Create Seat"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar_bg" />
+
+
+    <ImageView
+        android:id="@+id/border_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="26dp"
+        android:visibility="gone"
+        android:src="@drawable/border_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar_bg" />
+
+    <TextView
+        android:id="@+id/total_seat_no_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:visibility="gone"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/border_bg"
+        app:layout_constraintEnd_toEndOf="@+id/border_bg"
+        app:layout_constraintStart_toStartOf="@+id/border_bg"
+        app:layout_constraintTop_toTopOf="@+id/border_bg" />
+
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="360dp"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/actionbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/total_seat_tv"
+        app:tint="@color/text_grey" />
+
+
+    <ImageView
+        android:id="@+id/seatno_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:srcCompat="@drawable/textfield_bg" />
+
+    <ImageView
+        android:id="@+id/qr_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seatno_bg"
+        app:layout_constraintStart_toStartOf="@+id/seatno_bg"
+        app:layout_constraintTop_toTopOf="@+id/seatno_bg"
+        app:srcCompat="@drawable/qr_ic" />
+
+
+    <EditText
+        android:id="@+id/code_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:hint="Seat Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/seatno_bg"
+        app:layout_constraintEnd_toEndOf="@+id/seatno_bg"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toEndOf="@+id/qr_ic"
+        app:layout_constraintTop_toTopOf="@+id/seatno_bg"
+         />
+
+
+    <ImageView
+        android:id="@+id/generate_bg"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/category_bg"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/seatno_bg"
+        app:tint="@color/green" />
+
+    <TextView
+        android:id="@+id/generate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERATE"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/generate_bg"
+        app:layout_constraintEnd_toEndOf="@+id/generate_bg"
+        app:layout_constraintStart_toStartOf="@+id/generate_bg"
+        app:layout_constraintTop_toTopOf="@+id/generate_bg" />
+
+
+    <ImageView
+        android:id="@+id/update_bg"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/category_bg"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/seatno_bg"
+        app:tint="@color/yellow" />
+
+
+    <TextView
+        android:id="@+id/update_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/update_bg"
+        app:layout_constraintEnd_toEndOf="@+id/update_bg"
+        app:layout_constraintStart_toStartOf="@+id/update_bg"
+        app:layout_constraintTop_toTopOf="@+id/update_bg" />
+
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="360dp"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/actionbar_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/generate_bg"
+        app:tint="@color/text_grey" />
+
+
+    <TextView
+        android:id="@+id/download_qr_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:text="Download QR Code"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"/>
+
+    <TextView
+        android:id="@+id/download_qr_quote_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="1dp"
+        android:text="For accessing menu"
+        android:textSize="12sp"
+        android:textColor="@color/text_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/download_qr_tv"/>
+
+
+
+    <ImageView
+        android:id="@+id/download_bg"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/category_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        app:tint="@color/yellow" />
+
+
+    <ImageView
+        android:id="@+id/download_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download_white_ic"
+        app:layout_constraintBottom_toBottomOf="@+id/download_bg"
+        app:layout_constraintEnd_toEndOf="@+id/download_bg"
+        app:layout_constraintStart_toStartOf="@+id/download_bg"
+        app:layout_constraintTop_toTopOf="@+id/download_bg" />
+
+    <ImageView
+        android:id="@+id/barcode_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/create_qr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
